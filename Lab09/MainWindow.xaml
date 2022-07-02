@@ -1,0 +1,146 @@
+﻿<Window x:Class="Lab09.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab09"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="btnText" Click="btnText_Click"  Margin="5px" Padding="2px">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> Text
+            </Button>
+            <Button Name="btnBash" Click="btnBash_Click" Margin="5px" Padding="2px" Background="#FF96FF33">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> Bash
+            </Button>
+            <Button Name="btnCplus" Click="btnCplus_Click" Margin="5px" Padding="2px" Background="#FF3B63EB" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> C++
+            </Button>
+            <Button Name="btnCsharp" Click="btnCsharp_Click" Margin="5px" Padding="2px" Background="#FF0F3FE2" Foreground="#FFF1F1F1">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> C#
+            </Button>
+            <Button Name="btnJava" Click="btnJava_Click" Margin="5px" Padding="2px" Background="#FF8782F1" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> Java
+            </Button>
+            <Button Name="btnCSS" Click="btnCSS_Click" Margin="5px" Padding="2px" Background="#FF42E2F4" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> CSS
+            </Button>
+            <Button Name="btnHtml" Click="btnHtml_Click" Margin="5px" Padding="2px" Background="#FFEA7600" Foreground="White">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> HTML
+            </Button>
+            <Button Name="btnJS" Click="btnJS_Click" Margin="5px" Padding="2px" Background="#FFFCEC1B" Foreground="Black">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> JavaScript
+            </Button>
+            <Button Name="btnPhp" Click="btnPhp_Click" Margin="5px" Padding="2px" Background="#FF5D69B2">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> PHP
+            </Button>
+            <Button Name="btnPython" Click="btnPython_Click" Margin="5px" Padding="2px" Background="#FFF1F05B">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> Python
+            </Button>
+            <Button Name="btnSQL" Click="btnSQL_Click"  Margin="5px" Padding="2px" Foreground="#FFE6E43F" Background="#FF2E30D1">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources> SQL
+            </Button>
+        </StackPanel>
+        <DockPanel Width="110px" HorizontalAlignment="Right">
+            <Button Name="btnOne" Click="btnOne_Click" Margin="2px" Padding="2px" BorderBrush="#FF82AAFF" Foreground="#FF82AAFF" Background="White">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="2"/>
+                    </Style>
+                </Button.Resources> 1
+            </Button>
+            <Button Name="btnTwo" Click="btnTwo_Click" Margin="2px" Padding="2px" BorderBrush="#FF82AAFF" Background="White" Foreground="#FF82AAFF">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="2"/>
+                    </Style>
+                </Button.Resources> 2
+            </Button>
+            <Button Name="btnThree" Click="btnThree_Click" Margin="2px" Padding="2px" BorderBrush="#FF82AAFF" Foreground="#FF82AAFF" Background="White">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="2"/>
+                    </Style>
+                </Button.Resources> 3
+            </Button>
+            <Button Name="btnFour" Click="btnFour_Click" Margin="2px" Padding="2px" Foreground="#FF82AAFF" Background="White" BorderBrush="#FF82AAFF">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="2"/>
+                    </Style>
+                </Button.Resources> 4
+            </Button>
+            <Button Name="btnFive" Click="btnFive_Click" Margin="2px" Padding="2px" BorderBrush="#FF82AAFF" Foreground="#FF82AAFF" Background="White">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="2"/>
+                    </Style>
+                </Button.Resources> 5
+            </Button>
+            <ComboBox Name="comboboxx" Width="20px" Margin="2px" Padding="2px" BorderBrush="#FF82AAFF" Foreground="#FF82AAFF">
+                <ComboBox.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </ComboBox.Background>
+                <ComboBoxItem PreviewMouseDown="ComboBoxItem_PreviewMouseDown">5</ComboBoxItem>
+                <ComboBoxItem PreviewMouseDown="ComboBoxItem_PreviewMouseDown_1">10</ComboBoxItem>
+                <ComboBoxItem PreviewMouseDown="ComboBoxItem_PreviewMouseDown_2">20</ComboBoxItem>
+
+            </ComboBox>
+
+        </DockPanel>
+       
+        <DataGrid x:Name="response">
+            
+        </DataGrid>
+
+    </StackPanel>
+</Window>
